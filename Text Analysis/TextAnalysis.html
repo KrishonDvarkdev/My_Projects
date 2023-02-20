@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+
+  <title>HTML</title>
+  <link rel="stylesheet" href="TextAnalysis.css">
+</head>
+
+<body>
+  <main>
+    <div class="h1">
+      <h1>Text Analysis</h1>
+    </div>
+
+    <div class="Clear" onclick="clean()">Clear</div>
+
+    <div class="input">
+      <textarea id="input" onkeyup="keyup()" placeholder="Enter the text"></textarea>
+    </div>
+
+    <h5>To</h5>
+
+    <div class="copy" onclick="copy()">Copy</div>
+
+    <div class="output">
+      <textarea id="output" placeholder="See here result" readonly></textarea>
+    </div>
+
+    <div class="arrow">
+      <button onclick="left()">
+        < </button>
+          <button onclick="right()">></button>
+    </div>
+    <div class="btn">
+      <button id="btnUpercase" class="block" onclick="Upercase()">UpperCase</button>
+
+      <button id="btnLowercase" class="lower" onclick="Lowercase()">LowerCase</button>
+
+      <button id="btnRemovespace" class="remove" onclick="Removespace()">RemoveSpace</button>
+    </div>
+  </main>
+
+  <script src="TextAnalysis.js"></script>
+</body>
+
+</html>
